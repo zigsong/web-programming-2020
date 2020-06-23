@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>OMG zzang</title>
+	        <%= stylesheet_link_tag "index", media: "all" %>
+		</head>
+		
+		<body>
+            <h1><%= link_to "Oh My Girl", '/', class:"title" %></h1>
+			<nav>
+				<ul>
+					<li>
+                        <%= link_to  "멤버 소개", 'members', class:"nav-item" %>
+					</li>
+					<li>
+                        <%= link_to  "앨범", 'albums', class:"nav-item"%>
+					</li>
+					<li>
+                        <%= link_to  "활동", 'lyrics', class:"nav-item" %>
+					</li>
+					<li>
+                        <%= link_to  "공식 팬카페", 'http://cafe.daum.net/-ohmygirl', target:"_blank", class:"nav-item"%>
+					</li>
+				</ul>
+			</nav>
+			<div class="video" >
+				<iframe
+					width="560"
+					height="315"
+					src="https://www.youtube.com/embed/cHjrl0JVRik"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+
+		</body>
+					
+	</html>

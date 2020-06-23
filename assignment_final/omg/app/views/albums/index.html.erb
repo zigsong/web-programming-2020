@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Albums</title>
+	        <%= stylesheet_link_tag "albums", media: "all" %>
+		</head>
+		
+		<body>
+            <h1><%= link_to "Oh My Girl", '/', class:"title" %></h1>
+				<div class="img-container">
+                    <%= image_tag "cupid.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "closer.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "liarliar.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "windyday.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "a-ing.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>	          
+                    <%= image_tag "coloringbook.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "secretgarden.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "firework.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "thefifthseason.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>
+                    <%= image_tag "bungee.jpeg", :alt => "", :style => "width: 220px; height: 220px;" %>	
+				</div>
+		
+				<div class="titles">
+					Cupid, Closer, <span style="color: #F08080">Liar Liar</span>, Windy Day, A-ing,
+					<strong>Coloring Book</strong>, Secret Garden, Firework, <em>The Fifth Season</em>, Bungee
+				</div>
+
+		</body>
+					
+	</html>
