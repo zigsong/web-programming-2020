@@ -1,0 +1,36 @@
+<head>
+    <title>Members</title>
+    <%= stylesheet_link_tag "member", media: "all" %>
+
+</head>
+
+<body>
+    <h1><%= link_to "Oh My Girl", '/', class:"title" %></h1>
+    <%= link_to  "뒤로 가기", members_path, class:'back-btn' %>
+    <div class="profile-container">
+        <%= image_tag @member.image, class: 'profile-img' %>
+        <div class="profile-box">
+            <span><%= @member.name %> | </span>
+            <span><%= @member.bday %> | </span>
+            <span><%= @member.position %></span>
+        </div>
+    </div>
+
+    <div class="new-comment">
+        <%= form_for :comment, url: "/members/#{@member.id}/create" do |f| %>
+            <%= f.label :comment, class:'comment-label' %>
+            <%= f.text_area :content, class:'comment-input' %>
+            <%= f.submit '댓글 달기', class:'submit-btn' %>
+        <% end %>
+    </div>
+    
+    <div class="comment-list">
+        <% @member.comments.each do |comment| %>
+            <div class="comment-box">
+                <%= comment.content %>
+                <%= link_to image_tag('trash.png', style: 'width: 18px; height: auto;'), comment_delete_path(@member.id, comment.id), method: :delete %>
+            </div>
+        <% end %>
+    </div>
+
+</body>

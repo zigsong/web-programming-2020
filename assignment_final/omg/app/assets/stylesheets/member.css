@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story:400');
+
+body > * {
+    color: #ffffff;
+    font-family: 'Poor Story', cursive;
+}
+
+.back-btn {
+    font-size: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.profile-img {
+    width: 160px;
+    height: auto;
+}
+
+.profile-box > * {
+    font-size: 24px;
+}
+
+.comment-label {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.comment-input {
+    width: 200px;
+    height: 24px;
+}
+
+.new-comment {
+    margin-top: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-btn {
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Poor Story', cursive;
+}
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* position:relative; */
+}
+
+.comment-list > * {
+    font-size: 20px;
+}
+
+.comment-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}

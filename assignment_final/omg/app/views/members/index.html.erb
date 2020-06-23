@@ -20,14 +20,12 @@
 				<tbody>
                     <% @members.each do |member| %>
                         <tr>
-                            <td><%= image_tag member.image, :alt => "" %></td>
+                            <td><%= link_to image_tag(member.image), member_path(id: member.id) %></td>
                             <td><%= member.name %></td>
                             <td><%= member.bday %></td>
                             <td><%= member.position %></td>
                         </tr>
                     <% end %>
-
-					
 				</tbody>
 			</table>
 		</body>
